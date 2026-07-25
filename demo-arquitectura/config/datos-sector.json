@@ -1,0 +1,27 @@
+{
+  "sector": "arquitectura",
+  "nombre_generico": "Estudio de Arquitectura",
+  "eslogan_sugerido": "Arquitectura que perdura: espacios pensados desde el detalle.",
+  "servicios": [
+    "Diseño residencial",
+    "Arquitectura comercial",
+    "Remodelación y reformas",
+    "Consultoría y dirección de obra",
+    "Diseño interior"
+  ],
+  "problema_tipo": "Muchos proyectos se cotizan por WhatsApp, sin plano ni proceso claro, lo que genera presupuestos imprecisos y plazos que se extienden.",
+  "cta_principal": "Solicitar cotización",
+  "datos_contacto_placeholder": {
+    "telefono": "+57 300 000 0000",
+    "whatsapp": "+57 300 000 0000",
+    "direccion": "Ciudad, Colombia",
+    "horario": "Lunes a viernes, 8am - 6pm",
+    "email": "contacto@estudio-arquitectura.co"
+  },
+  "hero_imagenes": [
+    "https://images.pexels.com/photos/32254183/pexels-photo-32254183.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "https://images.pexels.com/photos/17729218/pexels-photo-17729218.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "https://images.pexels.com/photos/37253624/pexels-photo-37253624.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    "https://images.pexels.com/photos/31099298/pexels-photo-31099298.jpeg?auto=compress&cs=tinysrgb&w=1920"
+  ]
+}

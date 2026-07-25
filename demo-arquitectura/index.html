@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <meta name="description" content="Estudio de Arquitectura — diseño residencial, comercial y dirección de obra. Cotiza tu proyecto con un proceso claro." />
+  <title>Estudio de Arquitectura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M4 28 L16 6 L28 28" />
+            <path d="M10 28 L16 18 L22 28" />
+            <path d="M4 28 L28 28" />
+          </svg>
+        </span>
+        <span class="brand-name" data-field="nombre_generico">Estudio de Arquitectura</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#proceso" class="nav-link">Proceso</a>
+        <a href="#proyecto" class="nav-link">El proyecto</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-ghost nav-cta" data-cta>Solicitar cotización</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-slides" id="heroSlides" aria-hidden="true"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Estudio de arquitectura</p>
+      <h1 class="hero-title">
+        <span data-field="eslogan_sugerido">Arquitectura que perdura: espacios pensados desde el detalle.</span>
+      </h1>
+      <p class="hero-sub">
+        Diseñamos residencias, locales y reformas con un proceso claro — del primer boceto
+        a la entrega de obra. Cotiza tu proyecto en minutos, no en semanas de ida y vuelta.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary" data-cta>Solicitar cotización</a>
+        <a href="#proyecto" class="btn btn-ghost-light">Ver enfoque</a>
+      </div>
+      <div class="hero-dots" id="heroDots" role="tablist" aria-label="Imágenes del proyecto"></div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- Problema / Solución -->
+  <section class="band problem" id="proyecto">
+    <div class="container problem-grid">
+      <div class="problem-text">
+        <p class="section-eyebrow">El punto de partida</p>
+        <h2 class="section-title">
+          Cotizar por WhatsApp no es un proyecto. <span class="accent">Diseñar con plano, sí.</span>
+        </h2>
+        <p class="section-lead" data-field="problema_tipo">
+          Muchos proyectos se cotizan por WhatsApp, sin plano ni proceso claro, lo que genera
+          presupuestos imprecisos y plazos que se extienden.
+        </p>
+        <p class="section-body">
+          Por eso trabajamos con un método de cuatro fases: entendemos tu necesidad, proponemos
+          diseño, documentamos y acompañamos la obra. Menos ambigüedad, más control.
+        </p>
+      </div>
+      <aside class="problem-card" aria-label="Diferencia">
+        <div class="problem-row">
+          <span class="problem-tag problem-tag--off">Sin proceso</span>
+          <ul>
+            <li>Presupuesto a ojo, sin planos</li>
+            <li>Plazos que se duplican</li>
+            <li>Decisions por mensaje suelto</li>
+          </ul>
+        </div>
+        <div class="problem-divider" aria-hidden="true"></div>
+        <div class="problem-row">
+          <span class="problem-tag problem-tag--on">Con método</span>
+          <ul>
+            <li>Cotización por alcance y fase</li>
+            <li>Cronograma entregado</li>
+            <li>Documentación técnica clara</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="band services" id="servicios">
+    <div class="container">
+      <header class="band-head">
+        <p class="section-eyebrow">Qué hacemos</p>
+        <h2 class="section-title">Servicios del estudio</h2>
+      </header>
+      <div class="cards" id="servicesGrid" data-services></div>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section class="band process" id="proceso">
+    <div class="container">
+      <header class="band-head">
+        <p class="section-eyebrow">Cómo trabajamos</p>
+        <h2 class="section-title">Un proceso de cuatro fases</h2>
+      </header>
+      <ol class="process-list">
+        <li class="process-step">
+          <span class="step-num">01</span>
+          <h3 class="step-title">Brief</h3>
+          <p class="step-body">Escuchamos tu necesidad, presupuesto y plazos. Definimos juntos el alcance real del proyecto.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-num">02</span>
+          <h3 class="step-title">Diseño</h3>
+          <p class="step-body">Proponemos alternativas con planos, renders y materiales. Iteramos hasta cerrar la propuesta.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-num">03</span>
+          <h3 class="step-title">Documentación</h3>
+          <p class="step-body">Entregamos planos técnicos y memoria de materiales lista para construir sin ambigüedad.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-num">04</span>
+          <h3 class="step-title">Obra</h3>
+          <p class="step-body">Acompañamos la ejecución, visitamos obra y cuidamos que lo construido sea lo diseñado.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Prueba social -->
+  <section class="band social" id="social">
+    <div class="container">
+      <header class="band-head">
+        <p class="section-eyebrow">Testimonios</p>
+        <h2 class="section-title">Lo que dicen los clientes</h2>
+        <p class="band-note">Testimonios de ejemplo — se reemplazan con reseñas reales del negocio.</p>
+      </header>
+      <div class="quotes" id="quotes"></div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="band cta-final" id="contacto">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <p class="section-eyebrow light">Hablemos de tu proyecto</p>
+        <h2 class="section-title light" data-cta>Solicita tu cotización</h2>
+        <p class="cta-lead">
+          Cuéntanos qué imaginas. Te respondemos con un alcance y una estimación, sin compromiso.
+        </p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Teléfono</span>
+            <a data-field="datos_contacto_placeholder.telefono" href="#">+57 300 000 0000</a>
+          </li>
+          <li>
+            <span class="contact-label">WhatsApp</span>
+            <a data-field="datos_contacto_placeholder.whatsapp" href="#" id="waLink">+57 300 000 0000</a>
+          </li>
+          <li>
+            <span class="contact-label">Email</span>
+            <a data-field="datos_contacto_placeholder.email" href="#">contacto@estudio-arquitectura.co</a>
+          </li>
+          <li>
+            <span class="contact-label">Dirección</span>
+            <span data-field="datos_contacto_placeholder.direccion">Ciudad, Colombia</span>
+          </li>
+          <li>
+            <span class="contact-label">Horario</span>
+            <span data-field="datos_contacto_placeholder.horario">Lunes a viernes, 8am - 6pm</span>
+          </li>
+        </ul>
+      </div>
+      <form class="cta-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Cuéntanos del proyecto</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tipo de proyecto, m², ubicación, plazo…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-cta>Solicitar cotización</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M4 28 L16 6 L28 28" />
+            <path d="M10 28 L16 18 L22 28" />
+            <path d="M4 28 L28 28" />
+          </svg>
+        </span>
+        <span data-field="nombre_generico">Estudio de Arquitectura</span>
+      </div>
+      <nav class="footer-nav" aria-label="Pie">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer-credit">
+        Demo diseñada por <a href="https://www.vegora.com.co" target="_blank" rel="noopener">Vegora</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
